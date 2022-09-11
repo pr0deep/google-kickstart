@@ -26,7 +26,7 @@ void print(int t,const T& x) {
 }
 
 // constants ..
-const int N = 1e5+5;
+const int N = 1e6+5;
 
 int main() 
 {
