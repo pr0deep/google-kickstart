@@ -15,6 +15,8 @@ cp ./source/base.cpp ./"$FOLDER"/c.cpp;
 cp ./source/base.cpp ./"$FOLDER"/d.cpp;
 cp ./source/base.cpp ./"$FOLDER"/e.cpp;
 cp ./source/dbg.h ./"$FOLDER";
+cp ./source/run.sh ./"$FOLDER";
+touch in 
 
 cd "$FOLDER"
 
@@ -34,5 +36,4 @@ cp ../source/setup_test.sh ./
 # perms
 echo "fixing permissions ...!"
 chmod +x ./setup_test.sh
-
-
+chmod +x ./run.sh
