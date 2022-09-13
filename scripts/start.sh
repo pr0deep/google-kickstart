@@ -16,9 +16,9 @@ cp ./source/base.cpp ./"$FOLDER"/d.cpp;
 cp ./source/base.cpp ./"$FOLDER"/e.cpp;
 cp ./source/dbg.h ./"$FOLDER";
 cp ./source/run.sh ./"$FOLDER";
-touch in 
 
 cd "$FOLDER"
+touch in 
 
 # precompile headers
 echo "compiling headers ...!"
