@@ -5,10 +5,9 @@
 # setting up folder 
 echo "Enter contest name : "
 read FOLDER
-rm -rf "$FOLDER"
 
 echo "preparing folder ...!"
-mkdir "$FOLDER"/
+mkdir "$FOLDER"
 cp ./source/base.cpp ./"$FOLDER"/a.cpp;
 cp ./source/base.cpp ./"$FOLDER"/b.cpp;
 cp ./source/base.cpp ./"$FOLDER"/c.cpp;
@@ -37,3 +36,7 @@ cp ../source/setup_test.sh ./
 echo "fixing permissions ...!"
 chmod +x ./setup_test.sh
 chmod +x ./run.sh
+
+cd ..
+cp -a "$FOLDER" ../ 
+rm -rf "$FOLDER"
